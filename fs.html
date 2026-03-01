@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор файловой системы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Стандартное навигационное меню -->
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown">
+                    <a href="theme1.html">Тема 1</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="theme1.html#kaspersky">О Kaspersky Free</a></li>
+                        <li><a href="theme1.html#bitlocker">О BitLocker</a></li>
+                        <li><a href="theme1.html#veracrypt">О VeraCrypt</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="theme2.html">Тема 2</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="theme2.html#aomei">О AOMEI Backupper</a></li>
+                        <li><a href="theme2.html#macrium">О Macrium Reflect Free</a></li>
+                        <li><a href="theme2.html#clonezilla">О Clonezilla</a></li>
+                    </ul>
+                </li>
+                <li><a href="os.html">Выбор ОС</a></li>
+                <li><a href="fs.html">Выбор ФС</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Выбор файловой системы и разметки жесткого диска</h1>
+
+        <!-- Основной текст -->
+        <section class="content-section">
+            <p><b>Файловая система (ФС)</b> — это способ организации, хранения и управления данными на носителе информации (жестком диске, SSD, флеш-накопителе). Она определяет, как файлы хранятся, индексируются, читаются и записываются, а также какие атрибуты и разрешения можно задать для каждого файла. Файловая система является ключевым компонентом взаимодействия пользователя и операционной системы с физическим хранилищем данных.</p>
+
+            <p>В рамках системного программного обеспечения выбор файловой системы влияет на <b>производительность, надёжность хранения, совместимость с ОС и возможности по восстановлению данных.</b></p>
+        </section>
+
+        <!-- Обоснование выбора NTFS -->
+        <section class="choice-section">
+            <h2>Выбор файловой системы для Windows 10</h2>
+            <p>В связи с тем, что в рамках курсовой работы используется <b>Windows 10 Домашняя</b>, наиболее логичным и оптимальным выбором является <b>NTFS</b>. Эта файловая система:</p>
+            
+            <ul>
+                <li>полностью поддерживается выбранной ОС;</li>
+                <li>надёжна при работе с большими объёмами данных;</li>
+                <li>позволяет устанавливать права доступа и защищать файлы;</li>
+                <li>совместима с современными утилитами резервного копирования и восстановления.</li>
+            </ul>
+
+            <p>Также стоит отметить, что <b>NTFS</b> используется по умолчанию при установке Windows и не требует дополнительных действий по форматированию, что упрощает настройку системы для начинающих пользователей.</p>
+        </section>
+
+        <!-- Сравнение файловых систем -->
+        <section class="comparison-section">
+            <h2>Сравнение файловых систем</h2>
+            <table class="comparison-table">
+                <tr>
+                    <th>Характеристика</th>
+                    <th>NTFS</th>
+                    <th>FAT32</th>
+                    <th>exFAT</th>
+                </tr>
+                <tr>
+                    <td>Макс. размер файла</td>
+                    <td>16 ТБ</td>
+                    <td>4 ГБ</td>
+                    <td>16 ЭБ</td>
+                </tr>
+                <tr>
+                    <td>Шифрование</td>
+                    <td>EFS, BitLocker</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                </tr>
+                <tr>
+                    <td>Разрешения файлов</td>
+                    <td>Да</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                </tr>
+                <tr>
+                    <td>Совместимость</td>
+                    <td>Windows</td>
+                    <td>Все ОС</td>
+                    <td>Windows, macOS</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Разметка диска -->
+        <section class="disk-layout">
+            <h2>Разметка накопителя</h2>
+            <p>Разметка накопителя — это процесс деления физического диска на логические разделы, каждый из которых может использоваться отдельно.</p>
+            
+            <p>Для данной курсовой работы предлагается следующая схема разметки жёсткого диска:</p>
+            
+            <div class="disk-scheme">
+                <img src="FSD.jpg" alt="Схема разметки диска">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
